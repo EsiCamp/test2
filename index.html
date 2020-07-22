@@ -1,0 +1,102 @@
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css/main.css">
+  <title>فرم</title>
+</head>
+<body>
+  <div class="main_wrapper">
+    <div class="field">
+      <label class="label">
+        نام کاربری
+      </label>
+      <div class="control has-icons-left has-icons-right">
+        <input id="username" class="input is-success" type="text" placeholder="نام کاربری">
+        <span class="icon is-small is-right">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      <p id="username_message" class="help is-success"></p>
+    </div>
+    <div class="field">
+      <label class="label">
+        کد ملی
+      </label>
+      <div class="control has-icons-left has-icons-right">
+        <input id="national_code" class="input is-success"  placeholder="کد ملی">
+        <span class="icon is-small is-right">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      <p id="national_message" class="help is-success"></p>
+    </div>
+    <div class="field">
+      <label class="label">
+        تلفن
+      </label>
+      <div class="control has-icons-left has-icons-right">
+        <input id="tel" class="input is-success" type="text" placeholder="تلفن">
+        <span class="icon is-small is-right">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      <p id="tel_message" class="help is-success"></p>
+    </div>
+    <div class="field">
+      <label class="label">
+        رمز عبور
+      </label>
+      <div class="control has-icons-left has-icons-right">
+        <input id="pass" class="input is-success" type="password" placeholder="رمز عبور">
+        <span class="icon is-small is-right">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      <p id="pass_messsage" class="help is-success"></p>
+    </div>
+    <div class="field">
+      <label class="label">
+        تایید رمز عبور 
+      </label>
+      <div class="control has-icons-left has-icons-right">
+        <input id="confirm_pass" class="input is-success" type="password" placeholder="تایید رمز عبور">
+        <span class="icon is-small is-right">
+          <i class="fas fa-user"></i>
+        </span>
+        <span class="icon is-small is-left">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+      <p id="confirm_message" class="help is-success"></p>
+    </div>
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" onclick="mySubmit()">
+          تائید
+        </button>
+      </div>
+      <div class="control">
+        <button class="button is-link is-light" onclick="cleardata()">
+          لغو
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
